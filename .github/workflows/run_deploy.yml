@@ -19,6 +19,8 @@ jobs:
       - run: npm i --location=global yarn
       - run: yarn install --frozen-lockfile
       - run: yarn test:ui-jest
+      - run: yarn test:unit
+      - run: yarn test:ci
 
   deploy:
     name: "Deploy"
